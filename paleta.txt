@@ -1,0 +1,5 @@
+Fondo: Gris claro (#f4f4f4).
+Texto principal: Gris oscuro (#333333).
+Color de acento (links, hover): Azul profesional (#0073e6).
+Bordes y separadores: Azul suave (#b3d4fc).
+Header: Blanco puro (#ffffff) con un sutil sombreado.

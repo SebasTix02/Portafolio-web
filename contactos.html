@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="img/letra2.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat.css"> <!-- Enlace al archivo de chat -->
+    <link rel="stylesheet" href="css/main-contact.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/button-chat.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/links.css">
+    <link rel="stylesheet" href="css/card-contact.css">
+    <link rel="stylesheet" href="css/quote.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contactos.html" class="active">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal que ocupa todo el espacio restante -->
+    <div class="main-card playing">
+        <div class="image"></div>
+
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+
+        <div class="infotop">
+            <div class="grid-container">
+                <div class="cont-card">
+                    <button class="cont-mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                    </button>
+                    <div class="cont-profile-pic">
+                        <!-- Aquí reemplazamos el SVG por una imagen -->
+                        <img src="img\yo.jpeg" alt="Profile Picture">
+                    </div>
+                    <div class="cont-bottom">
+                        <div class="cont-content">
+                            <span class="cont-name">Sebastián Tixilema</span>
+                            <span class="cont-about-me">Ingeniero en Software - BackEnd - Web - IA</span>
+                        </div>
+                        <div class="cont-bottom-bottom">
+                            <div class="cont-social-links-container">
+                                <!-- Icono de LinkedIn -->
+                                <a href="https://www.linkedin.com/in/mateo-sebasti%C3%A1n-tixilema-merch%C3%A1n-29728b344"
+                                    target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M437.4 0H74.6C33.4 0 0 33.4 0 74.6v362.8c0 41.2 33.4 74.6 74.6 74.6h362.8c41.2 0 74.6-33.4 74.6-74.6V74.6C512 33.4 478.6 0 437.4 0zM151.2 414.5h-67V198.4h67v216.1zm-33.6-247.6c-21.2 0-38.2-17.1-38.2-38.2 0-21.2 17.1-38.2 38.2-38.2 21.2 0 38.2 17.1 38.2 38.2 0 21.1-17 38.2-38.2 38.2zm285.6 247.6h-67v-115.4c0-27.1-14.6-41.2-34.1-41.2-19.8 0-29.1 13.4-33.9 26.4-1.7 4.2-2.1 10.2-2.1 16.1v124.2h-67V198.4h67v32.8c9.3-13.7 23.9-33.5 57.9-33.5 42.3 0 74.2 27.7 74.2 87.7v128.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+
+                                <!-- Icono de GitHub -->
+                                <a href="https://github.com/SebasTix02" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                        <path
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                        </path>
+                                    </svg>
+                                </a>
+
+                            </div>
+                            <button class="cont-button"
+                                onclick="window.location.href='mailto:sebastixi2002@gmail.com?subject=Hola&body=Escribeme un mensaje'">Contactame</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="quo-card">
+                    <div class="quo-card-name">"El arte desafía A la tecnología y la tecnología inspira al arte."</div>
+                    <div class="quo-quote">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 330 307" height="80"
+                            width="80">
+                            <path fill="currentColor"
+                                d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="quo-author">- John Lasseter <br>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <button class="button-chat">
+        <svg style="fill:#FFFFFF;" class="button-chat-svg" viewBox="0,0,256,256" y="0px" x="0px"
+            xmlns="http://www.w3.org/2000/svg">
+            <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none"
+                stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#ffffff">
+                <g transform="scale(5.12,5.12)">
+                    <path
+                        d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z">
+                    </path>
+                </g>
+            </g>
+        </svg>
+        <span class="button-chat-text">Chatea :)</span>
+    </button>
+
+    <!-- Contenedor del chat -->
+    <div class="container-chat hidden">
+        <div class="nav-bar">
+            <a>Chat</a>
+            <button id="help-button" class="help-button">?</button> 
+            <div class="close">
+                <div class="line one"></div>
+                <div class="line two"></div>
+            </div>
+        </div>
+        <div class="messages-area" id="messages-area">
+            <!-- Mensajes se añadirán aquí -->
+        </div>
+        <div class="sender-area">
+            <div class="input-place">
+                <input placeholder="Enviar un mensaje." class="send-input" id="send-input" type="text" autocomplete="off">
+                <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div>
+
+                <div class="send" id="send-button">
+                    <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M2 2l20 10-20 10 2-10-2-10zm0 0l20 10-20 10 2-10-2-10z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Sebastián Tixilema. Todos los derechos reservados.</p>
+            <div class="card">
+
+                <a class="socialContainer containerTwo" href="https://x.com/SebasTx02" target="_blank">
+                    <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16"
+                        xmlns="http://www.w3.org/2000/svg" class="socialSvg twitterSvg">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a class="socialContainer containerThree"
+                    href="https://www.linkedin.com/in/mateo-sebasti%C3%A1n-tixilema-merch%C3%A1n-29728b344"
+                    target="_blank">
+                    <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+                        <path
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a class="socialContainer containerFour"
+                    href="mailto:sebastixi2002@gmail.com?subject=Hola&body=Escribeme un mensaje">
+                    <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16"
+                        xmlns="http://www.w3.org/2000/svg" class="socialSvg whatsappSvg">
+                        <path
+                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z">
+                        </path>
+                        <path
+                            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/script-chat.js"></script>
+    <script src="js/gpt.js"></script>
+</body>
+
+</html>

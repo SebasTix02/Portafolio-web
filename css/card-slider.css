@@ -1,0 +1,125 @@
+/* Estilos generales del slider */
+.port-slider {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    max-width: 100%; /* Controlamos que no se pase del ancho del contenedor */
+}
+
+.port-slider__container {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.port-card {
+    position: relative;
+    width: 400px; /* Aumenté el tamaño */
+    height: 300px; /* Aumenté el tamaño */
+    background: linear-gradient(-45deg, #d9d9d9 0%, #434343 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 40px; /* Espacio entre cards */
+    flex-shrink: 0; /* Evita que las cards se encojan */
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+/* Ajustes para la imagen */
+.port-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Asegura que la imagen no se corte y se ajuste dentro del contenedor */
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+.port-card__content {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.port-card:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.port-card:hover .port-card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}
+
+/* Títulos y descripciones */
+.port-card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.port-card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.port-card:hover .port-card__image {
+    opacity: 0.3;
+}
+
+.port-card:hover .port-card__image {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* Flechas de navegación */
+.port-slider__prev, .port-slider__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.port-slider__prev {
+    left: 10px;
+}
+
+.port-slider__next {
+    right: 10px;
+}
+@media (max-width: 480px) {
+    .port-slider {
+        width: 100%;
+        overflow: visible;
+    }
+    .port-card {
+        width: 90%; /* Hacer que cada tarjeta ocupe el 100% del contenedor */
+        height: 300px; /* Ajustar altura a una proporción razonable */
+        margin-right: 40px; /* Eliminar el espacio entre las tarjetas */
+    }
+
+    .port-card__image {
+        object-fit: cover; /* La imagen ocupa todo el espacio */
+    }
+
+    .port-slider__prev, .port-slider__next {
+        padding: 8px; /* Reducir el tamaño de las flechas */
+    }
+}

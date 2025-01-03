@@ -1,0 +1,139 @@
+/* Estilos generales */
+:root {
+    --background: #f0f4f8;
+    --primary-color: #333;
+    --accent-color: #29b6f6;
+    --hover-color: #ff5722;
+    --text-color: #333;
+    --white: #fff;
+    --light-blue: #e3f2fd;
+}
+
+/* Contenedor principal con la imagen de fondo */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor de contenido */
+.content {
+    background-color: rgba(0, 0, 0, 0.5);  /* Fondo oscuro semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Títulos y texto */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+strong {
+    color: black;
+}
+
+/* Estilos del botón "Más Acerca de mi" */
+.btn-about {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animación de hover para el botón "Más Acerca de mi" */
+.btn-about:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-5px);
+}
+
+/* Estilos para el logo de GitHub */
+.github-logo {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.github-logo img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+/* Animación de hover para el logo de GitHub */
+.github-logo:hover img {
+    transform: scale(1.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .content {
+        width: 90%; /* Ocupa casi toda la pantalla */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn-about {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    .github-logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 100%; /* Ocupa toda la pantalla */
+        padding: 15px;
+        border-radius: 10px; /* Ajustar el borde para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn-about {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .github-logo img {
+        width: 35px;
+        height: 35px;
+    }
+}

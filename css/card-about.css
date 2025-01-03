@@ -1,0 +1,128 @@
+.about-card {
+  margin: 20px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+  position: relative;
+  width: 1200px;
+  height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.wave {
+  position: absolute;
+  width: 3040px;
+  height: 4500px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg, #00ddeb, #af40ff 60%, #5b42f3);
+}
+
+.icon {
+  width: 2.5em; /* Reducir el tamaño del icono */
+  margin: 0 auto; /* Centrar */
+  padding-bottom: 0.5em; /* Reducir separación inferior */
+}
+
+.infotop {
+  text-align: center;
+  font-size: 18px; /* Ajuste del tamaño de fuente */
+  position: relative;
+  margin-top: 10px; /* Espaciado más compacto arriba */
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 12px; /* Reducir el tamaño de fuente */
+  font-weight: 100;
+  margin-top: 5px; /* Reducir separación */
+  text-transform: lowercase;
+}
+
+/* Animación de las ondas */
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave {
+  animation-duration: 9000ms;
+}
+
+/* Keyframes para las ondas */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para el grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas, distribuidas equitativamente */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  row-gap: 10px; /* Espaciado reducido */
+}
+/* Responsividad */
+@media (max-width: 1200px) {
+  .about-card {
+    width: 90%;
+    height: auto;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    width: 95%;
+    height: auto;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 10px;
+    width: 90%;
+    height: 950px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  .wave {
+    width: 2000px;
+    height: 3000px;
+    opacity: 0.4;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+  }
+
+  .infotop {
+    font-size: 16px;
+  }
+}

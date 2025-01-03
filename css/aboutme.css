@@ -1,0 +1,104 @@
+.card-me {
+    color: #1b1b1b; /* Color del texto */
+    width: 190px;
+    height: 300px;
+    position: relative;
+    outline: 1px solid #00000000; /* Reducir el borde exterior */
+    border-radius: 8px;
+    line-height: 150%;
+    padding: 16px;
+    background: #695acd00; /* Color de fondo violeta */
+    background-blend-mode: multiply;
+    transition: background-color 1s ease-in-out;
+    overflow: hidden;
+    margin: 8px auto; /* Añadido margen superior/inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-me-front {
+    top: 16px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #000000 !important; /* Cambiar letras blancas al color especificado */
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.card-me-back {
+    font-size: small !important;
+    transform: translateX(120%);
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    color: #000000 !important; /* Cambiar letras blancas al color especificado */
+}
+
+/* Text */
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333 !important; /* Cambiar letras blancas al color especificado */
+}
+
+/* Text divider */
+.title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    border-radius: 50%;
+    height: 2px;
+    margin: 2px auto;
+    background-color: #1b1b1b; /* Color del divisor */
+}
+
+/* Hover */
+.card-me:hover {
+    background-color: #695acd00; /* Color de fondo al hacer hover */
+}
+
+.card-me:hover .card-me-front {
+    transform: translateX(-100%);
+}
+
+.card-me:hover .card-me-back {
+    transform: translateX(0);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card-me {
+        width: 150px; /* Reducir el ancho en pantallas medianas */
+        height: 250px; /* Reducir altura */
+        padding: 12px; /* Reducir padding */
+    }
+
+    .title {
+        font-size: 1.2rem; /* Reducir tamaño de fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-me {
+        width: 150px; /* Reducir el ancho en pantallas pequeñas */
+        height: 200px; /* Reducir altura */
+        padding: 8px; /* Reducir padding */
+        border-radius: 6px; /* Reducir radio de borde */
+    }
+
+    .title {
+        font-size: 1rem; /* Reducir tamaño de fuente */
+    }
+
+    .card-me-front
+    {
+        font-size: 0.5rem; /* Ajustar tamaño de fuente en ambas caras */
+    }
+    .card-me-back {
+        font-size: small !important;
+        transform: translateX(120%);
+        transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+        color: #000000 !important; /* Cambiar letras blancas al color especificado */
+    }
+}

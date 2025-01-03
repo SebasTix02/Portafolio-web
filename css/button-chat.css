@@ -1,0 +1,43 @@
+.button-chat {
+    transition: none 0.5s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 130px;
+    height: 50px;
+    gap: 10px;
+    border: none;
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    background-color: rgb(125, 95, 245);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .button-chat-text {
+    transition: none 0.3s ease;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .button-chat:hover .button-chat-text {
+    display: none;
+    position: absolute;
+  }
+  
+  .button-chat-svg {
+    width: 23px;
+    height: 23px;
+    transition: 0.8s;
+  }
+  
+  .button-chat:hover .button-chat-svg {
+    margin-left: 40px;
+    display: block;
+    transform: rotate(50deg);
+  }
+  

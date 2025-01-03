@@ -1,0 +1,190 @@
+/* Reset básico */
+body, h1, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Paleta de colores */
+:root {
+    --background: #f8f9fa;
+    --text-dark: #333333;
+    --accent-blue: #0073e6;
+    --light-blue: #66b2ff;
+    --highlight-orange: #ff8c42;
+    --header-bg: #f0f8ff;
+    --border-gray: #e5e5e5;
+    --white: #ffffff;
+}
+
+/* General */
+body {
+    background-color: var(--background);
+    color: var(--text-dark);
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 65px; /* Ajusta este valor según la altura del header */
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Menú de Navegación */
+nav ul {
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a {
+    color: var(--text-dark);
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a.active {
+    color: var(--accent-blue);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-blue);
+}
+
+/* Hover Animado */
+nav ul li a:hover {
+    color: var(--accent-blue);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--light-blue));
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Botón del Menú (Responsive) */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Botón CTA */
+.btn-cta {
+    display: inline-block;
+    background: var(--highlight-orange);
+    color: var(--white);
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-cta:hover {
+    background: linear-gradient(90deg, var(--highlight-orange), var(--light-blue));
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: var(--white);
+        position: absolute;
+        top: 65px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        width: 80%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .btn-cta {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+}
